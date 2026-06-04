@@ -112,7 +112,7 @@ const politicalNews = [
     headline: 'Legislature approves new infrastructure package',
     headline_te: 'విధానసభ కొత్త మౌలిక సదుపాయాల ప్యాకేజీ ఆమోదించింది',
     time: 'Yesterday',
-    category: 'Policy',
+    category: 'Telangana',
     summary: 'Funding will support roads, transit, and clean energy projects across the region.',
     summary_te: 'ప్రాంతంలోని రోడ్లు, రవాణా మరియు స్వచ్ఛమైన శక్తి ప్రాజెక్టుల కోసం ఆర్థిక సహాయం అందిస్తుంది.'
   },
@@ -120,7 +120,7 @@ const politicalNews = [
     headline: 'Diplomatic talks resume after international summit',
     headline_te: 'అంతర్జాతీయ శిఖరసభ తర్వాత దౌత్య చర్చలు పునఃప్రారంభం',
     time: '3 days ago',
-    category: 'Global',
+    category: 'International',
     summary: 'Officials from neighboring countries agreed to reopen trade and travel discussions.',
     summary_te: 'పక్కటి దేశాల అధికారులు వ్యాపారం మరియు ప్రయాణ చర్చలను తిరిగి ప్రారంభించడానికి ఒప్పుకున్నారు.'
   }
@@ -175,6 +175,73 @@ const featuredStories = [
     summary: 'From festivals to city projects, the stories your neighborhood is talking about.',
     summary_te: 'ఉత్సవాల నుంచి నగర ప్రాజెక్టులు వరకు, మీ పొరుగున్న ప్రాంతంలో చర్చించే కథలు.'
   }
+];
+
+const boxOfficeLive = [
+  { title: 'Peddi', total: '₹65.7 Cr', status: 'Live', url: 'https://tracktollywood.com/box-office-collection/peddi/' },
+  { title: 'Obsession', total: '₹20.9 Cr', status: 'Live', url: 'https://tracktollywood.com/box-office-collection/obsession/' },
+  { title: 'Blast', total: '₹27.6 Cr', status: 'Live', url: 'https://tracktollywood.com/box-office-collection/blast/' },
+  { title: 'Chand Mera Dil', total: '₹31.3 Cr', status: 'Live', url: 'https://tracktollywood.com/box-office-collection/chand-mera-dil/' },
+  { title: 'Drishyam 3 (Malayalam)', total: '₹109.8 Cr', status: 'Live', url: 'https://tracktollywood.com/box-office-collection/drishyam-3-malayalam/' },
+  { title: 'Karuppu', total: '₹200.7 Cr', status: 'Live', url: 'https://tracktollywood.com/box-office-collection/karuppu/' },
+  { title: 'Pati Patni Aur Woh Do', total: '₹58.6 Cr', status: 'Live', url: 'https://tracktollywood.com/box-office-collection/pati-patni-aur-woh-do/' },
+  { title: 'Godari Gattupaina', total: '₹12.1 Cr', status: 'Live', url: 'https://tracktollywood.com/box-office-collection/godari-gattupaina/' }
+];
+
+const boxOfficeUpdates = [
+  {
+    title: 'Peddi Opening Day Pre-Sales Cross ₹50 Cr, Eyes ₹100 Cr Start',
+    url: 'https://tracktollywood.com/peddi-opening-day-pre-sales-50-cr/',
+    category: 'Box Office News',
+    time: 'Today'
+  },
+  {
+    title: '*Ram Charan* _Peddi_ Pre-Sales Cross $1.5M Overseas',
+    url: 'https://tracktollywood.com/ram-charan-peddi-pre-sales-overseas/',
+    category: 'Box Office News',
+    time: 'Today'
+  },
+  {
+    title: 'Suriya’s Karuppu Crosses ₹300 Cr Mark at Box Office',
+    url: 'https://tracktollywood.com/karuppu-300-cr-box-office-suriya/',
+    category: 'Box Office News',
+    time: 'Today'
+  },
+  {
+    title: 'Peddi Advance Bookings Cross ₹33 Cr Worldwide',
+    url: 'https://tracktollywood.com/peddi-advance-bookings-cross-33-cr-worldwide/',
+    category: 'Box Office News',
+    time: 'Today'
+  }
+];
+
+const topStories = [
+  {
+    title: 'Aamir Khan to Marry Gauri Spratt on July 5 in Mumbai',
+    url: 'https://tracktollywood.com/aamir-khan-marry-gauri-spratt-july-5/',
+    time: 'Today'
+  },
+  {
+    title: 'Jailer 2 Release Date: September or Diwali 2026 Options',
+    url: 'https://tracktollywood.com/jailer-2-release-date-september-diwali-2026/',
+    time: 'Today'
+  },
+  {
+    title: 'Ranveer Singh: FWICE Withdraws Directive After Legal Notice',
+    url: 'https://tracktollywood.com/ranveer-singh-fwice-withdraws-directive/',
+    time: 'Today'
+  },
+  {
+    title: 'Peddi Worldwide Breakeven: ₹500 Cr Target for Ram Charan',
+    url: 'https://tracktollywood.com/peddi-worldwide-breakeven-target-500-cr/',
+    time: 'Today'
+  }
+];
+
+const boxOfficeTop5 = [
+  { label: 'Day 1 AP/TS', movie: 'Pushpa 2', value: '₹74.33 Cr' },
+  { label: 'Day 1 WW', movie: 'Pushpa 2', value: '₹74.33 Cr' },
+  { label: 'Closing WW', movie: 'Pushpa 2', value: '₹74.33 Cr' }
 ];
 
 const categories = ['All', 'In theaters', 'Upcoming'];
@@ -554,6 +621,11 @@ const UI_STRINGS = {
     navUpdates: 'Movie updates',
     navPolitics: 'Political news',
     navLocal: 'Local news',
+    navBoxOffice: 'Box Office',
+    navReviews: 'Reviews',
+    navGallery: 'Gallery',
+    navPortal: 'Box Office Portal',
+    navAdvertise: 'Advertise With Us',
     eyebrow: 'News Modules',
     heroHeading: 'Everything happening around you, all in one place.',
     heroCopy: 'Navigate directly to the content your audience wants: movie updates, political headlines, or local stories.',
@@ -561,12 +633,23 @@ const UI_STRINGS = {
     politicalNews: 'Political news',
     localNews: 'Local news',
     movieTabs: {
-      all: 'All',
+      new: 'New updates',
       box: 'Box Office India',
       tollywood: 'Tollywood',
       latest: 'Latest updates'
     },
     movieAbout: 'Film about',
+    boxOfficeLiveTitle: 'Live Box Office Tracking',
+    boxOfficeLiveCopy: 'Realtime scorecards for the biggest Telugu releases.',
+    boxOfficeUpdates: 'Box Office Updates',
+    boxOfficeCopy: 'Latest box office headlines from the top films.',
+    topStories: 'Top Stories',
+    topStoriesCopy: 'The biggest film stories and breaking entertainment headlines.',
+    boxOfficeTop5: 'Box Office Top 5',
+    reviewsCopy: 'Latest movie reviews and critic coverage.',
+    galleryCopy: 'Photo stories, stills, and behind-the-scenes visuals.',
+    portalCopy: 'Direct access to box office monitoring and data tools.',
+    advertiseCopy: 'Advertise with us for premium Telugu film marketing.',
     collections: 'Collections',
     reportType: 'Type',
     castLabel: 'Cast',
@@ -599,12 +682,23 @@ const UI_STRINGS = {
     politicalNews: 'రాజకీయ వార్తలు',
     localNews: 'స్థానిక వార్తలు',
     movieTabs: {
-      all: 'అన్నీ',
+      new: 'తాజా నవీకరణలు',
       box: 'బాక్స్ ఆఫీస్ ఇండియా',
       tollywood: 'టాలీవుడ్',
       latest: 'తాజా నవీకరణలు'
     },
     movieAbout: 'సినిమా గురించి',
+    boxOfficeLiveTitle: 'నేరుగా బాక్స్ ఆఫీస్ ట్రాకింగ్',
+    boxOfficeLiveCopy: 'టాప్ తెలుగు రిలీజ్‌ల కోసం ప్రత్యక్ష స్కోర్ కార్డ్.',
+    boxOfficeUpdates: 'బాక్స్ ఆఫీస్ అప్‌డేట్లు',
+    boxOfficeCopy: 'టాప్ సినిమాల నుండి తాజా బాక్స్ ఆఫీస్ శీర్షికలు.',
+    topStories: 'టాప్ స్టోరీస్',
+    topStoriesCopy: 'ప్రముఖ సినిమా కథలు మరియు బ్రేకింగ్ వినోద శీర్షికలు.',
+    boxOfficeTop5: 'బాక్స్ ఆఫీస్ టాప్ 5',
+    reviewsCopy: 'తాజా సినిమా సమీక్షలు మరియు విమర్శకుల కవర్‌ేజ్.',
+    galleryCopy: 'ఫోటో కథలు, స్టిల్స్ మరియు వెనుక స్టేజ్ దృశ్యాలు.',
+    portalCopy: 'బాక్స్ ఆఫీస్ మానిటరింగ్ మరియు డేటా టూల్స్‌కు నేరుగా ప్రవేశం.',
+    advertiseCopy: 'తెలుగు సినిమా మార్కెటింగ్ కోసం మనతో ప్రకటన చేయండి.',
     collections: 'సేకరణలు',
     reportType: 'రకం',
     castLabel: 'కాస్ట్',
@@ -628,6 +722,11 @@ const UI_STRINGS = {
   }
 };
 
+const CONTACT = {
+  phone: '+91-00000-00000',
+  email: 'hello@example.com'
+};
+
 export default function App() {
   const [search, setSearch] = useState('');
   const [historySearch, setHistorySearch] = useState('');
@@ -644,8 +743,8 @@ export default function App() {
   const toggleLang = () => setLang((p) => (p === 'en' ? 'te' : 'en'));
   const [liveNews, setLiveNews] = useState({ politics: [], local: [] });
   const [newsState, setNewsState] = useState({ status: 'idle', message: '' });
-  const MOVIE_TAB_KEYS = ['all', 'box', 'tollywood', 'latest'];
-  const [selectedMovieTab, setSelectedMovieTab] = useState('all');
+  const MOVIE_TAB_KEYS = ['new', 'box', 'tollywood', 'latest'];
+  const [selectedMovieTab, setSelectedMovieTab] = useState('new');
   const [theme, setTheme] = useState(() => {
     if (typeof window === 'undefined') return 'dark';
     return window.localStorage.getItem('moviePulseTheme') || 'dark';
@@ -1124,6 +1223,24 @@ export default function App() {
     ? liveNews.politics
     : politicalNewsNormalized;
 
+  const POLITICAL_FILTER_KEYS = ['all', 'international', 'national', 'telangana', 'andhra'];
+  const POLITICAL_FILTER_TITLES = {
+    all: 'All updates',
+    international: 'International',
+    national: 'National',
+    telangana: 'Telangana',
+    andhra: 'Andhra Pradesh'
+  };
+  const [selectedPoliticalFilter, setSelectedPoliticalFilter] = useState('all');
+
+  const filteredPoliticalNews = useMemo(
+    () => displayedPoliticalNews.filter((item) => {
+      if (selectedPoliticalFilter === 'all') return true;
+      return item.category === POLITICAL_FILTER_TITLES[selectedPoliticalFilter];
+    }),
+    [displayedPoliticalNews, selectedPoliticalFilter]
+  );
+
   const displayedLocalNews = newsState.status === 'ready' && liveNews.local.length > 0
     ? liveNews.local
     : localNewsNormalized;
@@ -1137,9 +1254,14 @@ export default function App() {
         <div className="logo">Movies & Politics</div>
         <div className="nav-links">
           <a href="#updates">{UI_STRINGS[lang].navUpdates}</a>
+          <a href="#boxoffice">{UI_STRINGS[lang].navBoxOffice}</a>
           <a href="#history">{UI_STRINGS[lang].navHistory}</a>
           <a href="#politics">{UI_STRINGS[lang].navPolitics}</a>
           <a href="#local">{UI_STRINGS[lang].navLocal}</a>
+          <a href="#reviews">{UI_STRINGS[lang].navReviews}</a>
+          <a href="#gallery">{UI_STRINGS[lang].navGallery}</a>
+          <a href="#portal">{UI_STRINGS[lang].navPortal}</a>
+          <a href="#advertise">{UI_STRINGS[lang].navAdvertise}</a>
         </div>
         <div style={{display: 'flex', gap: '0.5rem'}}>
           <button className="theme-toggle" onClick={toggleTheme}>
@@ -1173,6 +1295,84 @@ export default function App() {
         </div>
       </header>
       
+
+      <section className="section-wrap box-office-section" id="boxoffice">
+        <div className="section-header">
+          <div>
+            <h2>{UI_STRINGS[lang].boxOfficeLiveTitle}</h2>
+            <p>{UI_STRINGS[lang].boxOfficeLiveCopy}</p>
+          </div>
+          <button className="outline-button" onClick={() => window.location.hash = '#boxoffice-updates'}>{UI_STRINGS[lang].browseAll}</button>
+        </div>
+
+        <div className="live-boxoffice-list">
+          {boxOfficeLive.map((item) => (
+            <a key={item.title} href={item.url} target="_blank" rel="noreferrer" className="live-boxoffice-pill">
+              <strong>{item.title}</strong>
+              <span>{item.total}</span>
+              <small>{item.status}</small>
+            </a>
+          ))}
+        </div>
+
+        <div className="section-header" id="boxoffice-updates">
+          <div>
+            <h3>{UI_STRINGS[lang].boxOfficeUpdates}</h3>
+            <p>{UI_STRINGS[lang].boxOfficeCopy}</p>
+          </div>
+        </div>
+
+        <div className="news-list">
+          {boxOfficeUpdates.map((item) => (
+            <article key={item.title} className="news-card">
+              <h3>
+                <a href={item.url} target="_blank" rel="noreferrer">{item.title}</a>
+              </h3>
+              <div className="news-meta">
+                <span>{item.time}</span>
+                <span>{item.category}</span>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <div className="section-header">
+          <div>
+            <h3>{UI_STRINGS[lang].boxOfficeTop5}</h3>
+          </div>
+        </div>
+        <div className="top5-grid">
+          {boxOfficeTop5.map((item) => (
+            <div key={item.label} className="top5-card">
+              <span>{item.label}</span>
+              <strong>{item.movie}</strong>
+              <p>{item.value}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="section-wrap top-stories" id="top-stories">
+        <div className="section-header">
+          <div>
+            <h2>{UI_STRINGS[lang].topStories}</h2>
+            <p>{UI_STRINGS[lang].topStoriesCopy}</p>
+          </div>
+        </div>
+        <div className="news-list">
+          {topStories.map((story) => (
+            <article key={story.title} className="news-card">
+              <h3>
+                <a href={story.url} target="_blank" rel="noreferrer">{story.title}</a>
+              </h3>
+              <div className="news-meta">
+                <span>{story.time}</span>
+                <span>Top story</span>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
 
       <section className="featured-section">
         <div className="section-header featured-header">
@@ -1522,41 +1722,96 @@ export default function App() {
 
       <section className="section-wrap news-section" id="politics">
         <div className="section-header">
-            <div>
+          <div>
             <h2>{UI_STRINGS[lang].politicalNews}</h2>
-            <p>Stay informed with the latest national and global political updates.</p>
+            <p>Stay informed with the latest national, regional, and international political updates.</p>
             {newsState.message && (
               <p className={`status-note ${newsState.status}`}>{newsState.message}</p>
             )}
           </div>
+          <div className="category-chips politics-tabs">
+            {POLITICAL_FILTER_KEYS.map((key) => (
+              <button
+                key={key}
+                className={key === selectedPoliticalFilter ? 'chip active' : 'chip'}
+                onClick={() => setSelectedPoliticalFilter(key)}
+              >
+                {POLITICAL_FILTER_TITLES[key]}
+              </button>
+            ))}
+          </div>
         </div>
 
-        <div className="news-list">
-          {displayedPoliticalNews.map((item) => (
-            <article
-              key={item.headline}
-              className="news-card"
-              onClick={() => openDetail(item, 'Political news')}
-            >
-              <img src={getImageFor(item)} alt={lang === 'te' ? (item.headline_te || item.headline) : item.headline} className="card-image" />
-              <div className="news-meta">
-                <span>{item.time}</span>
-                <span>{item.category}</span>
-              </div>
-              <h3>{lang === 'te' ? (item.headline_te || item.headline) : item.headline}</h3>
-              <p>{lang === 'te' ? (item.summary_te || item.summary) : item.summary}</p>
-              <button
-                type="button"
-                className="card-button"
-                onClick={(event) => {
-                  event.stopPropagation();
-                  openDetail(item, 'Political news');
-                }}
+        <div className="politics-group">
+          <div className="politics-group-header">
+            <h3>Common updates</h3>
+            <p>All political headlines and breaking stories displayed here first.</p>
+          </div>
+          <div className="news-list">
+            {displayedPoliticalNews.map((item) => (
+              <article
+                key={`common-${item.headline}`}
+                className="news-card"
+                onClick={() => openDetail(item, 'Political news')}
               >
-                {UI_STRINGS[lang].readMore}
-              </button>
-            </article>
-          ))}
+                <img src={getImageFor(item)} alt={lang === 'te' ? (item.headline_te || item.headline) : item.headline} className="card-image" />
+                <div className="news-meta">
+                  <span>{item.time}</span>
+                  <span>{item.category}</span>
+                </div>
+                <h3>{lang === 'te' ? (item.headline_te || item.headline) : item.headline}</h3>
+                <p>{lang === 'te' ? (item.summary_te || item.summary) : item.summary}</p>
+                <button
+                  type="button"
+                  className="card-button"
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    openDetail(item, 'Political news');
+                  }}
+                >
+                  {UI_STRINGS[lang].readMore}
+                </button>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <div className="politics-group">
+          <div className="politics-group-header">
+            <h3>{POLITICAL_FILTER_TITLES[selectedPoliticalFilter]} stories</h3>
+            <p>{selectedPoliticalFilter === 'all' ? 'Showing every available political story.' : `Stories filtered for ${POLITICAL_FILTER_TITLES[selectedPoliticalFilter]}.`}</p>
+          </div>
+          <div className="news-list">
+            {filteredPoliticalNews.length > 0 ? (
+              filteredPoliticalNews.map((item) => (
+                <article
+                  key={`section-${selectedPoliticalFilter}-${item.headline}`}
+                  className="news-card"
+                  onClick={() => openDetail(item, 'Political news')}
+                >
+                  <img src={getImageFor(item)} alt={lang === 'te' ? (item.headline_te || item.headline) : item.headline} className="card-image" />
+                  <div className="news-meta">
+                    <span>{item.time}</span>
+                    <span>{item.category}</span>
+                  </div>
+                  <h3>{lang === 'te' ? (item.headline_te || item.headline) : item.headline}</h3>
+                  <p>{lang === 'te' ? (item.summary_te || item.summary) : item.summary}</p>
+                  <button
+                    type="button"
+                    className="card-button"
+                    onClick={(event) => {
+                      event.stopPropagation();
+                      openDetail(item, 'Political news');
+                    }}
+                  >
+                    {UI_STRINGS[lang].readMore}
+                  </button>
+                </article>
+              ))
+            ) : (
+              <p className="empty-state">No stories match this political section.</p>
+            )}
+          </div>
         </div>
       </section>
 
@@ -1597,12 +1852,55 @@ export default function App() {
         </div>
       </section>
 
+      <section className="section-wrap" id="reviews">
+        <div className="section-header">
+          <div>
+            <h2>{UI_STRINGS[lang].navReviews}</h2>
+            <p>{UI_STRINGS[lang].reviewsCopy}</p>
+          </div>
+        </div>
+        <p>Recent critic reviews and audience reactions will appear here.</p>
+      </section>
+
+      <section className="section-wrap" id="gallery">
+        <div className="section-header">
+          <div>
+            <h2>{UI_STRINGS[lang].navGallery}</h2>
+            <p>{UI_STRINGS[lang].galleryCopy}</p>
+          </div>
+        </div>
+        <p>Photo stories, event stills, and visual previews will be showcased here.</p>
+      </section>
+
+      <section className="section-wrap" id="portal">
+        <div className="section-header">
+          <div>
+            <h2>{UI_STRINGS[lang].navPortal}</h2>
+            <p>{UI_STRINGS[lang].portalCopy}</p>
+          </div>
+        </div>
+        <p>Launch the box office portal experience with live collection tracking and earnings summaries.</p>
+      </section>
+
+      <section className="section-wrap" id="advertise">
+        <div className="section-header">
+          <div>
+            <h2>{UI_STRINGS[lang].navAdvertise}</h2>
+            <p>{UI_STRINGS[lang].advertiseCopy}</p>
+          </div>
+        </div>
+        <p>Reach out using the contact details in the footer for advertising and sponsorship opportunities.</p>
+      </section>
+
       <footer className="footer">
         <div>
           <p>Movies & Politics</p>
           <p>Curated updates and news for movie fans.</p>
         </div>
         <div>
+          <p>
+            Contact: <a href={`tel:${CONTACT.phone}`}>{CONTACT.phone}</a> | <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+          </p>
           <p>{UI_STRINGS[lang].copyright}</p>
         </div>
       </footer>
